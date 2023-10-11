@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/Styles/style.css">
+    <title>Tirador de Dúvidas</title>
+</head>
+<body>
+    <div class="background__escolha">
+        <header class="escolha__introduction">
+            <h1>Cansou de ficar na dúvida de como fazer algo?</h1>
+            <p>
+                Utilize o nosso método matemático que, considerando suas emoções e como você se sentiria ao tomar uma decisão, oferecerá um resultado para ajudá-lo a decidir se deve ou não prosseguir com algo. Ainda não entendeu? Este é um projeto que esclarecerá todas as suas dúvidas em relação a uma pergunta. E se você ainda estiver em dúvida, poderá testá-lo por si mesmo.
+            </p>
+            <h2>Vamos Começar</h2>
+            <p>
+                Para resolvermos sua dúvida, responda as questões abaixo pensando em seu problema, caso não entenda como funciona, clique <a href="Assets/Pages/Explicação.html">aqui</a>.
+            </p>
+        </header>
+        <main class="escolha">
+            <div class="escolha__question">
+                <label for="duvidaSim">Se fizer o que lhe traz dúvida, ficará como?</label>
+                <span>😢</span>
+                    <input type="range" id="duvidaSim" min="1" max="10" value="1">
+                <span>😄</span>
+            </div>
+            <div class="escolha__question">
+                <label for="duvidaNao">Se não fizer o que lhe traz dúvida, ficará como?</label>
+                <span>😢</span>
+                    <input type="range" id="duvidaNao" min="1" max="10" value="1">
+                <span>😄</span>
+                
+            </div>
+            <div class="escolha__question">
+                <label for="decisaoSim">Pense que você fez, como ficaria?</label>
+                <span>😢</span>
+                    <input type="range" id="decisaoSim" min="1" max="10" value="1">
+                <span>😄</span>
+            </div>
+            <div class="escolha__question">
+                <label for="decisaoNao">Pense que você não fez, como ficaria?</label>
+                <span>😢</span>
+                    <input type="range" id="decisaoNao" min="1" max="10" value="1">
+                <span>😄</span>
+            </div>
+            <div class="escolha__content-button">
+                <button onclick="duvida()">Veja o que fazer</button>
+            </div>
+        </main>
+        <div class="resultado">
+            <h3>Resultado</h3>
+            <div class="tabela__resultados">
+                <p>1</p>
+            </div>
+        </div>
+    </div>
+    <script src="Assets/Javascript/script.js"></script>
+</body>
+</html>

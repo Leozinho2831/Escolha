@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/style.css">
+    <title>Explicação</title>
+</head>
+<body>
+    <div class="background__explicacao">
+        <header class="explicacao__introduction">
+            <h1>Dúvidas?</h1>
+            <p>Estarei dando um exemplo de como funciona com base na dúvida: "Eu deveria ir à escola hoje?" Entre os adolescentes, essa é uma pergunta recorrente, uma vez que nessa idade ocorre a descoberta de hobbies, entre outras coisas, que os fazem querer procrastinar atividades que não lhes trazem tanta felicidade.</p>
+            <cite>"Não estamos incentivando ninguém a faltar à escola. Os estudos são fundamentais na vida. Por favor, vá à escola. Garanto que não se arrependerá de cada momento com seus amigos."</cite>
+        </header>
+        <main class="escolha">
+            <div class="escolha__question">
+                <label for="duvidaSim">Se for a escola, como ficará?</label>
+                <span>😢</span>
+                    <input type="range" id="duvidaSim" min="1" max="10" value="1">
+                <span>😄</span>
+            </div>
+            <div class="escolha__question">
+                <label for="duvidaNao">Se não ir à escola, como ficará?</label>
+                <span>😢</span>
+                    <input type="range" id="duvidaNao" min="1" max="10" value="1">
+                <span>😄</span>
+                
+            </div>
+            <div class="escolha__question">
+                <label for="decisaoSim">Pense que você foi a escola, como estaria?</label>
+                <span>😢</span>
+                    <input type="range" id="decisaoSim" min="1" max="10" value="1">
+                <span>😄</span>
+            </div>
+            <div class="escolha__question">
+                <label for="decisaoNao">Pense que você não foi a escola, como estaria?</label>
+                <span>😢</span>
+                    <input type="range" id="decisaoNao" min="1" max="10" value="1">
+                <span>😄</span>
+            </div>
+            <div class="escolha__content-button">
+                <button onclick="duvida()">Veja o que fazer</button>
+            </div>
+        </main>
+    </div>
+    <script src="../Javascript/script.js"></script>
+</body>
+</html>
