@@ -18,12 +18,12 @@ function duvida(){
     let mensagemResultado = document.querySelector('.tabela__resultados p');
 
     if(resultadoDuvida < resultadoDecisao){
-        mensagemResultado.textContent = 'Sim, faça ou vá.';
+        mensagemResultado.textContent = 'Sim, faça isso, não perca tempo';
     } else if(resultadoDuvida > resultadoDecisao) {
-        mensagemResultado.textContent = 'Não vá ou não faça.';
+        mensagemResultado.textContent = 'Não recomendaria, pois pode ser um erro irreversível.';
     } else if(resultadoDuvida === resultadoDecisao) {
         mensagemResultado.textContent = 'Resultado foi igual. Faça de novo sendo mais rígido com sigo mesmo.';
     } else if(resultadoDuvida, resultadoDecisao === 0){
-        mensagemResultado.textContent = 'Resultado foi igual. Faça de novo sendo mais rígido com sigo mesmo.';
+        mensagemResultado.textContent = 'O resultado foi o mesmo. Tente de forma mais rigorosa consigo mesmo.';
     }
 };
