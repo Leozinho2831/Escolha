@@ -97,7 +97,7 @@ a:visited {
     }
 }
 
-@media (max-width:410px){
+@media (max-width:440px){
     :root{
         --paddingGlobal: 15px;
     }
