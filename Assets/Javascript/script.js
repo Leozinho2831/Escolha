@@ -24,6 +24,6 @@ function duvida(){
     } else if(resultadoDuvida === resultadoDecisao) {
         mensagemResultado.textContent = 'Resultado foi igual. Faça de novo sendo mais rígido com sigo mesmo.';
     } else if(resultadoDuvida, resultadoDecisao === 0){
-        mensagemResultado.textContent = 'O resultado foi o mesmo. Tente de forma mais rigorosa consigo mesmo.';
+        mensagemResultado.textContent = 'O resultado foi o mesmo em tudo. Assim não consigo lhe responder';
     }
 };
